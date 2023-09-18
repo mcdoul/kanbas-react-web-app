@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbas Courses Grades</title>
+</head>
+
+<body>
+    <table>
+        <tbody valign="top">
+            <tr>
+                <!-- Kanbas Navigation -->
+                <td>
+                    <iframe id="kanbas-Navigation" src="/kanbas/KanbasNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Course Navigation -->
+                <td>
+                    <iframe id="course-Navigation" src="/kanbas/Courses/CourseNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Grades -->
+                <td>
+                    <div id="grades-button">
+                        <select>
+                            <option value="GRADEBOOK">Gradebook</option>
+                            <option value="GRADEBOOK-1">Gradebook 1</option>
+                            <option value="GRADEBOOK-2">Gradebook 2</option>
+                        </select>
+                        <button>Import</button>
+                        <select>
+                            <option value="EXPORT" selected>Export</option>
+                            <option value="EXPORT-1" selected>Export 1</option>
+                            <option value="EXPORT-2" selected>Export 2</option>
+                        </select>
+                        <button>Configure</button>
+                    </div>
+
+                    <div id="grades-filter">
+                        <h2>Student Names</h2>
+                        <input type="text" placeholder="Search Students">
+                        <h2>Assignment Names</h2>
+                        <input placeholder="Search Assignments">
+                        <br>
+                        <br>
+                        <button>Apply Filters</button>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div id="grades-table">
+                        <table id="grades-table" border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Student Name
+                                    </th>
+                                    <th>
+                                        A1 SETUP Out of 100
+                                    </th>
+                                    <th>
+                                        A2 HTML Out of 100
+                                    </th>
+                                    <th>
+                                        A3 CSS Out of 100
+                                    </th>
+                                    <th>
+                                        A4 BOOTSTRAP Out of 100
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice Wonderland</td>
+                                    <td>98</td>
+                                    <td>89</td>
+                                    <td>87</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Princess Leia</td>
+                                    <td>98</td>
+                                    <td>80</td>
+                                    <td>87</td>
+                                    <td>86</td>
+                                </tr>
+                                <tr>
+                                    <td>Luke Skywalker</td>
+                                    <td>
+                                        <input type="number" name="student-grade" id="" value="99" max="100" min="0"
+                                            step="1">
+                                    </td>
+                                    <td>88</td>
+                                    <td>97</td>
+                                    <td>82</td>
+                                </tr>
+                                <tr>
+                                    <td>Han Solo</td>
+                                    <td>83</td>
+                                    <td>99</td>
+                                    <td>94</td>
+                                    <td>98</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+
+

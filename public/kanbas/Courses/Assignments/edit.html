@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbas Courses Assignments Edit</title>
+</head>
+
+<body>
+    <table>
+        <tbody valign="top">
+            <tr>
+                <!-- Kanbas Navigation -->
+                <td>
+                    <iframe id="kanbas-Navigation" src="/kanbas/KanbasNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Course Navigation -->
+                <td>
+                    <iframe id="course-Navigation" src="/kanbas/Courses/CourseNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Edit -->
+                <td>
+                    <select>
+                        <option value="SPEED-GRADER" selected>SpeedGrader</option>
+                    </select>
+                    <hr>
+                    <form action="../assignments/index.html">
+                        <div>
+                            <h2>Assignment Name</h2>
+                            <input type="text" value="A1 - ENV + HTML">
+                            <br>
+                            <br>
+                            <textarea cols="30" rows="5">This is the assignment description.</textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="points">Points</label>
+                            <br>
+                            <input type="number" max="100" min="0" step=1 value="100">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="assignment-group">Assignment Group</label>
+                            <br>
+                            <select>
+                                <option value="ASSIGNMENTS" selected>Assignments</option>
+                                <option value="EXAMS">Exams</option>
+                                <option value="PROJECT">Project</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="grade-display-as">Display Grade as</label>
+                            <br>
+                            <select>
+                                <option value="PERCENTAGE" selected>Percentage</option>
+                                <option value="VALUE">Grade Value</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="submission-type">Submission type</label>
+                            <br>
+                            <select>
+                                <option value="ONLINE" selected>Online</option>
+                                <option value="IN-PERSON">In Person</option>
+                            </select>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="">Online Entry Options</label>
+                                <br>
+                                <input type="checkbox">
+                                <label for="text-entry">Text Entry</label>
+                                <br>
+                                <input type="checkbox">
+                                <label for="website-url">Website URL</label>
+                                <br>
+                                <input type="checkbox">
+                                <label for="media-recordings">Media Recordings</label>
+                                <br>
+                                <input type="checkbox">
+                                <label for="student-annotation">Student Annotation</label>
+                                <br>
+                                <input type="checkbox">
+                                <label for="file-uploads">File Uploads</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="submission-attempts">
+                                Submission Attempts
+                            </label>
+                            <br>
+                            <select>
+                                <option value="UNLIMITED" selected>Unlimited</option>
+                                <option value="ONE">1</option>
+                                <option value="TWO">2</option>
+                                <option value="THREE">3</option>
+                                <option value="FOUR">4</option>
+                                <option value="FIVE">5</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="plagiarism-review"> Plagiarism Review </label>
+                            <br>
+                            <select>
+                                <option value="NONE" selected>None</option>
+                                <option value="STRICT">Strict</option>
+                                <option value="RELAXED">Relaxed</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="group-assignment"> Group Assignment </label>
+                            <br>
+                            <input type="checkbox">
+                            <label for="checkbox-group">This is a group assignment</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="peer-reviews"> Peer Reviews </label>
+                            <br>
+                            <input type="checkbox">
+                            <label for="checkbox-peer-reviews">Require Peer Reviews</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Assign</label>
+                            <br>
+                            <label for="assign-to">Assign to</label>
+                            <br>
+                            <input type="text" value="Everyone">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="due"> Due </label>
+                            <br>
+                            <input type="date" value="2023-01-01">
+                            <br>
+                            <br>
+                            <label for="available-from"> Available from </label>
+                            <br>
+                            <input type="date" value="2023-01-01">
+                            <br>
+                            <br>
+                            <label for="until"> Until </label>
+                            <br>
+                            <input type="date" value="2023-01-01">
+                        </div>
+                        <br>
+                        <div>
+                            <button>Cancel</button>
+                            <button>Save</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+
+

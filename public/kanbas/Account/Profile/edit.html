@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbas Account Profile Edit</title>
+</head>
+
+<body>
+    <table>
+        <tbody valign="top">
+            <tr>
+                <!-- Kanbas Nevigation -->
+                <td>
+                    <iframe id="kanbas-navigation" src="/kanbas/KanbasNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Account Nevigation -->
+                <td>
+                    <iframe id="Account-navigation" src="/kanbas/Account/AccountNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
+                </td>
+
+                <!-- Edit Profile -->
+                <td>
+                    <form action="./index.html" id="profile-edit-form">
+                        <div>
+                            <h1>Jose Annunziato</h1>
+                            <label for="name">Name:* </label>
+                            <input type="text" value="Jose Annunziato">
+                            <label for="pronouns">Pronouns: </label>
+                            <select>
+                                <option value="NONE" selected>None</option>
+                                <option value="HE-HIM-HIS">He/Him/His</option>
+                                <option value="SHE-HER-HERS">She/Her/Hers</option>
+                                <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="title">Title: </label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <h2>Contact</h2>
+                            No registered services, you can add some on the <a href="#">settings</a> page.
+                        </div>
+                        <div>
+                            <h2>Biography</h2>
+                            Faculty, Software Engineer, Al, Space, and renewables enthusiast.
+                            <br>
+                            <textarea cols="50"rows="5">
+                                Faculty, Software Engineer, Al, Space, and renewables enthusiast.
+                            </textarea>
+                        </div>
+                        <div>
+                            <h2>Links</h2>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/@WebDevTV">Youtube</a> Links to anexternal site.
+                                </li>
+                            </ul>
+                        </div>
+                        <table border="0" width="80%" id="links-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Title
+                                    </th>
+                                    <th></th>
+                                    <th>
+                                        URL
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" value="Youtube">
+                                    </td>
+                                    <td>&rarr;</td>
+                                    <td><input type="text" value="https://www.youtube.com/@WebDevTV"></td>
+                                    <td><a href="#">Remove</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <button type="button">Add another link</button>
+                            <br>
+                            <button type="button">Cancel</button>
+                            <button>Save Profile</button>
+                            <br>
+                            <button type="button">Edit Profile</button>
+                            <button>Cancel Editing</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+
+
+
