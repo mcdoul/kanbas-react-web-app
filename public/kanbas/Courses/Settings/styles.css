@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#wd-settings-nevigation{
+    margin-bottom: 20px;
+}
+
+#wd-settings-nevigation ul {
+    list-style: none;
+}
+
+
+#wd-settings-nevigation li {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#wd-settings-nevigation li.wd-settings-nevigation-active {
+    border-bottom:2px solid black;
+}
+
+#wd-settings-nevigation li.wd-settings-nevigation-active a {
+    color: black;
+}
+
+#wd-settings-nevigation a {
+    color: rgb(191, 8, 8);
+    text-decoration: none;
+}
+
+#wd-settings-nevigation a:hover {
+    color: rgb(191, 8, 8);
+    text-decoration: none;
+}
+
+.wd-course-details-form-item {
+    margin: 20px;
+}
+
+.wd-course-details-form-item a {
+    text-decoration: none;
+    color: rgb(191, 8, 8);
+}
+
+.wd-course-details-form-item .btn-secondary{
+    background-color:rgb(235, 235, 235);
+    color: black;
+    border-color: rgb(235, 235, 235);
+    margin-right: 5px;
+    width: 15%;
+}
+#navigation {
+    margin-bottom: 20px;
+}
+#navigation h6 {
+    margin-left: 35px;
+}
+#navigation p {
+    font-size: 15px;
+    margin-left: 35px;
+    color: grey;
+}
+
+#navigation ul {
+    list-style: none;
+}
+#navigation .wd-navigation-info {
+    color: grey;
+}
+
+#navigation .btn-secondary {
+    background-color:rgb(235, 235, 235);
+    color: black;
+    border-color: rgb(235, 235, 235);
+    margin-right: 5px;
+    width: 15%;
+}
+

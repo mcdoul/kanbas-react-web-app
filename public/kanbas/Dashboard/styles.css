@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+#dashboard{
+    margin-left: 50px;
+}
+
+.wd-course-card i {
+    font-size: 30px;
+    color: rgb(166, 166, 166);
+}
+
+.wd-course-card{
+    width: 18rem;
+}
+
+.wd-course-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card.wd-course-card a {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
+
+.card.wd-course-card .card-title {
+    color:rgb(34, 67, 118);
+}
+
+.card.wd-course-card .card-text {
+    color:grey;
+    margin-bottom: 8px;
+}

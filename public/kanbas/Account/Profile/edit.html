@@ -5,99 +5,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../KanbasNavigation/styles.css">
+    <link rel="stylesheet" href="../AccountNavigation/styles.css">
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js" crossorigin="anonymous"></script>
     <title>Kanbas Account Profile Edit</title>
 </head>
 
 <body>
-    <table>
-        <tbody valign="top">
-            <tr>
-                <!-- Kanbas Nevigation -->
-                <td>
-                    <iframe id="kanbas-navigation" src="/kanbas/KanbasNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
-                </td>
+    <div class="wd-flex-row-container">
+        <div id="kanbas-nevigation">
+            <ul class="wd-kanbas-navigation">
+                <li class="wd-kanbas-navigation-active">
+                    <a href="/Kanbas/Account/Profile/index.html"> <i class="fa fa-user" aria-hidden="true"></i> Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/index.html"> <i class="fas fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/index.html"> <i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-clock" aria-hidden="true"></i> History</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-laptop" aria-hidden="true"></i> Studio</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-creative-commons" aria-hidden="true"></i> Commons</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-question-circle-o" aria-hidden="true"></i> Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="account-navigation">
+            <ul class="wd-account-navigation">
+                <li>
+                    <a href="#">Notifications</a>
+                </li>
+                <li class="wd-account-navigation-active">
+                    <a href="../profile/index.html" target="_top">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+                <li >
+                    <a href="#">ePortfolios</a>
+                </li>
+                <li>
+                    <a href="#">Shared Content</a>
+                </li>
+                <li>
+                    <a href="#">The Hub</a>
+                </li>
+                <li>
+                    <a href="#">Qwickly Course Tools</a>
+                </li>
+                <li>
+                    <a href="#">Global Announcements</a>
+                </li>
+            </ul>
+        </div>
+        <div id="wd-edit-profile">
+            <form action="./index.html" id="profile-edit-form">
+                <div class="wd-profile-info">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="wd-profile-info">
+                    <label for="name" class="col-sm-2 col-form-label"> Name:* </label>
+                    <div class="col-sm-10">
+                        <input type="text" value="Jose Annunziato" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="wd-profile-info">
+                    <label for="pronouns">Pronouns: </label>
+                    <select class="form-select">
+                        <option value="NONE" selected>None</option>
+                        <option value="HE-HIM-HIS">He/Him/His</option>
+                        <option value="SHE-HER-HERS">She/Her/Hers</option>
+                        <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
+                    </select>
+                </div>
+                <div class="wd-profile-info">
+                    <label for="name" class="col-sm-2 col-form-label"> Title </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
 
-                <!-- Account Nevigation -->
-                <td>
-                    <iframe id="Account-navigation" src="/kanbas/Account/AccountNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
-                </td>
+                <div class="container mt-5">
+                    <div class="wd-profile-info">
+                        <h4>Contact</h4>
+                        No registered services, you can add some on the <a href="#">settings</a> page.
+                    </div>
+                    <div class="wd-profile-info">
+                        <h4>Biography</h4>
+                        <textarea cols="50"rows="5" class="form-control">Faculty, Software Engineer, Al, Space, and renewables enthusiast.</textarea>
+                    </div>
+                    <div class="wd-profile-info">
+                        <h4>Links</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/@WebDevTV">Youtube</a> Links to anexternal site.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
 
-                <!-- Edit Profile -->
-                <td>
-                    <form action="./index.html" id="profile-edit-form">
-                        <div>
-                            <h1>Jose Annunziato</h1>
-                            <label for="name">Name:* </label>
-                            <input type="text" value="Jose Annunziato">
-                            <label for="pronouns">Pronouns: </label>
-                            <select>
-                                <option value="NONE" selected>None</option>
-                                <option value="HE-HIM-HIS">He/Him/His</option>
-                                <option value="SHE-HER-HERS">She/Her/Hers</option>
-                                <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
-                            </select>
-                            <br>
-                            <br>
-                            <label for="title">Title: </label>
-                            <input type="text">
+                <div class="wd-profile-info row">
+                    <div class="col-md-5">
+                        <label for="name" class="col-sm-2 col-form-label" value="Youtube"> Title </label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-md-1">
+                        <br><br>
+                        →
+                    </div>
+                    <div class="col-md-5">
+                        <label for="url" class="col-sm-2 col-form-label" value="https://www.youtube.com/@WebDevTV"> URL </label>
+                        <input type="text" class="form-control" id="url">
+                    </div>
+                    <div class="col-md-1">
+                        <br><br>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+
+                <div class="wd-profile-info">
+                    <button class="btn btn-sm btn-secondary">Add another link</button>
+                </div>
+
+                <div class="wd-profile-info row justify-content-end">
+                    <button class="btn col-md-2 btn-secondary"> Cancel</button>
+                    <button class="btn col-md-3 btn-danger"> Save Profile</button>
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="wd-edit-profile-button" class="position-absolute top-0 end-50 mt-3 mr-3">
+                                <button class="btn"> <i class="fa fa-pencil" aria-hidden="true"></i> Cancel Editing</button>
+                            </div>
                         </div>
-                        <div>
-                            <h2>Contact</h2>
-                            No registered services, you can add some on the <a href="#">settings</a> page.
-                        </div>
-                        <div>
-                            <h2>Biography</h2>
-                            Faculty, Software Engineer, Al, Space, and renewables enthusiast.
-                            <br>
-                            <textarea cols="50"rows="5">
-                                Faculty, Software Engineer, Al, Space, and renewables enthusiast.
-                            </textarea>
-                        </div>
-                        <div>
-                            <h2>Links</h2>
-                            <ul>
-                                <li>
-                                    <a href="https://www.youtube.com/@WebDevTV">Youtube</a> Links to anexternal site.
-                                </li>
-                            </ul>
-                        </div>
-                        <table border="0" width="80%" id="links-table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Title
-                                    </th>
-                                    <th></th>
-                                    <th>
-                                        URL
-                                    </th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input type="text" value="Youtube">
-                                    </td>
-                                    <td>&rarr;</td>
-                                    <td><input type="text" value="https://www.youtube.com/@WebDevTV"></td>
-                                    <td><a href="#">Remove</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div>
-                            <button type="button">Add another link</button>
-                            <br>
-                            <button type="button">Cancel</button>
-                            <button>Save Profile</button>
-                            <br>
-                            <button type="button">Edit Profile</button>
-                            <button>Cancel Editing</button>
-                        </div>
-                    </form>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 

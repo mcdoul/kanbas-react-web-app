@@ -5,112 +5,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../KanbasNavigation/styles.css">
+    <link rel="stylesheet" href="../CourseNavigation/styles.css">
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../vendors/bootstrap/css/bootstrap.js" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js" crossorigin="anonymous"></script>
     <title>Kanbas Courses Grades</title>
+</script>
 </head>
 
 <body>
-    <table>
-        <tbody valign="top">
-            <tr>
-                <!-- Kanbas Navigation -->
-                <td>
-                    <iframe id="kanbas-Navigation" src="/kanbas/KanbasNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
-                </td>
+    <div class="wd-flex-row-container">
+        <div id="kanbas-nevigation">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <a href="/Kanbas/Account/Profile/index.html"> <i class="fa fa-user" aria-hidden="true"></i> Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/index.html"> <i class="fas fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+                </li>
+                <li class="wd-kanbas-navigation-active">
+                    <a href="/Kanbas/Courses/Home/index.html"> <i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-clock" aria-hidden="true"></i> History</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-laptop" aria-hidden="true"></i> Studio</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-creative-commons" aria-hidden="true"></i> Commons</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-question-circle-o" aria-hidden="true"></i> Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="course-navigation">
+            <ul class="wd-course-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Modules</a>
+                </li>
+                <li>
+                    <a href="#">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Ouizzes</a>
+                </li>
+                <li class="wd-course-navigation-active">
+                    <a href="/Kanbas/Courses/Grades/index.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Announcements</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Syllabus</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Settings/courseDetails.html" target="_top">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div id="wd-grades">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">CS5610.11744.202310</li>
+                    <li class="breadcrumb-item" aria-current="page"> > Grades</li>
+                </ol>
+            </nav>
+            <hr>
+            <div id="wd-grades-button"  class="row justify-content-end">
+                <button class="btn btn-sm btn-secondary col-md-2"><i class="fa fa-upload" aria-hidden="true"></i>Import</button>
+                <select class="btn btn-sm btn-secondary col-md-2"> 
+                    
+                    <option value="EXPORT"> ➩ Export</option>
+                    <option value="EXPORT-1"> ➩Export 1</option>
+                    <option value="EXPORT-2"> ➩Export 2</option>
+                </select>
+            </div>
+            <div id="wd-grades-search" class="row" >
+                <div class="wd-grades-item col-md-6">
+                    <h6>Student Names</h6>
+                    <input type="text" placeholder="Search Students" class="form-control">
+                </div>
+                <div class="wd-grades-item col-md-6">
+                    <h6>Assignment Names</h6>
+                    <input placeholder="Search Assignments" class="form-control"> 
+                </div>
+            </div>
+            <div class="wd-grades-item">
+                <button class="btn btn-secondary">Apply Filters</button>
+            </div>
 
-                <!-- Course Navigation -->
-                <td>
-                    <iframe id="course-Navigation" src="/kanbas/Courses/CourseNavigation/index.html" width="100%" height="500" frameborder="0"></iframe>
-                </td>
-
-                <!-- Grades -->
-                <td>
-                    <div id="grades-button">
-                        <select>
-                            <option value="GRADEBOOK">Gradebook</option>
-                            <option value="GRADEBOOK-1">Gradebook 1</option>
-                            <option value="GRADEBOOK-2">Gradebook 2</option>
-                        </select>
-                        <button>Import</button>
-                        <select>
-                            <option value="EXPORT" selected>Export</option>
-                            <option value="EXPORT-1" selected>Export 1</option>
-                            <option value="EXPORT-2" selected>Export 2</option>
-                        </select>
-                        <button>Configure</button>
-                    </div>
-
-                    <div id="grades-filter">
-                        <h2>Student Names</h2>
-                        <input type="text" placeholder="Search Students">
-                        <h2>Assignment Names</h2>
-                        <input placeholder="Search Assignments">
-                        <br>
-                        <br>
-                        <button>Apply Filters</button>
-                        <br>
-                        <br>
-                    </div>
-
-                    <div id="grades-table">
-                        <table id="grades-table" border="1" width="100%">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Student Name
-                                    </th>
-                                    <th>
-                                        A1 SETUP Out of 100
-                                    </th>
-                                    <th>
-                                        A2 HTML Out of 100
-                                    </th>
-                                    <th>
-                                        A3 CSS Out of 100
-                                    </th>
-                                    <th>
-                                        A4 BOOTSTRAP Out of 100
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alice Wonderland</td>
-                                    <td>98</td>
-                                    <td>89</td>
-                                    <td>87</td>
-                                    <td>90</td>
-                                </tr>
-                                <tr>
-                                    <td>Princess Leia</td>
-                                    <td>98</td>
-                                    <td>80</td>
-                                    <td>87</td>
-                                    <td>86</td>
-                                </tr>
-                                <tr>
-                                    <td>Luke Skywalker</td>
-                                    <td>
-                                        <input type="number" name="student-grade" id="" value="99" max="100" min="0"
-                                            step="1">
-                                    </td>
-                                    <td>88</td>
-                                    <td>97</td>
-                                    <td>82</td>
-                                </tr>
-                                <tr>
-                                    <td>Han Solo</td>
-                                    <td>83</td>
-                                    <td>99</td>
-                                    <td>94</td>
-                                    <td>98</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+            <div id="grades-table" class="table-responsive">
+                <table id="grades-table" class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>
+                                Student Name
+                            </th>
+                            <th>
+                                A1 SETUP Out of 100
+                            </th>
+                            <th>
+                                A2 HTML Out of 100
+                            </th>
+                            <th>
+                                A3 CSS Out of 100
+                            </th>
+                            <th>
+                                A4 BOOTSTRAP Out of 100
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="wd-grade-student-name">Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td class="wd-grade-student-name">Princess Leia</td>
+                            <td>98</td>
+                            <td>80</td>
+                            <td>87</td>
+                            <td>86</td>
+                        </tr>
+                        <tr>
+                            <td class="wd-grade-student-name">Luke Skywalker</td>
+                            <td>
+                                <input type="number" name="student-grade" id="" value="99" max="100" min="0"
+                                    step="1">
+                            </td>
+                            <td>88</td>
+                            <td>97</td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td class="wd-grade-student-name">Han Solo</td>
+                            <td>83</td>
+                            <td>99</td>
+                            <td>94</td>
+                            <td>98</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 

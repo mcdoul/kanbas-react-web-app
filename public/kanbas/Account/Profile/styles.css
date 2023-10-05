@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+#wd-profile{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#wd-edit-profile{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.wd-profile-info i {
+    font-size: 180px;
+    color: rgb(218, 218, 218);
+    margin-bottom: 20px;
+}
+
+#arrow {
+    font-size: 10px;
+    color: rgb(218, 218, 218);
+    margin-bottom: 20px;
+}
+
+.wd-profile-info h2 {
+    margin-bottom: 50px;
+}
+
+.wd-profile-info h4 {
+    margin-top: 30px;
+}
+
+.wd-profile-info{
+    margin-top: 20px;
+}
+
+.wd-profile-info a {
+    color: rgb(191, 8, 8);
+}
+
+#wd-edit-profile-button{
+    margin-top: 50px;
+}
+
+#wd-edit-profile-button .btn{
+    background-color:rgb(218, 218, 218);
+}
+
+.wd-profile-info .btn-secondary {
+    background-color:rgb(218, 218, 218);
+    color: black;
+    margin-right: 5px;
+}
+
+.col-md-1 a {
+    color:rgb(191, 8, 8);
+    text-decoration: none;
+}
