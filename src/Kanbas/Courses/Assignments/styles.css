@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#wd-assignments-container {
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#wd-assignments-edit-container{
+    width: 70%;
+    margin-top: 30px;
+}
+
+#wd-assignments-container .fa-check-circle{
+    color: green;
+}
+
+#wd-assignments-container .fa-file-text-o{
+    color: green;
+}
+
+#wd-assignments-container .fa-ellipsis-v{
+    color: black;
+    margin-left: 20px;
+}
+
+#wd-assignments-container a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#wd-assignments-container span {
+    border: 1px solid grey;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#wd-assignments-container li {
+    color: rgb(90, 90, 90);
+}
+
+.form-group {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+#wd-assignments-button .btn-secondary{
+    background-color:rgb(235, 235, 235);
+    color: black;
+    border-color: rgb(235, 235, 235);
+    margin-right: 5px;
+}
+
+#wd-assignments-edit-container .wd-assignments-form-item {
+    margin-bottom: 20px;
+}
+
+#wd-entry-option {
+    font-weight: 600;
+}
+#wd-edit-assignment-button button{
+    margin: 5px;
+}
+
+.btn-secondary{
+    background-color:rgb(235, 235, 235);
+    color: black;
+    border-color: rgb(235, 235, 235);
+    margin-right: 5px;
+}
