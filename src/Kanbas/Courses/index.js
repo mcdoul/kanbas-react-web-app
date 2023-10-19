@@ -9,7 +9,6 @@ import Grades from "./Grades";
 
 
 
-
 function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
