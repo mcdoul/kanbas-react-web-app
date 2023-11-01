@@ -102,4 +102,6 @@ body *{
     font-size: 17px;
     color: rgb(191, 8, 8);
 }
-
+.form-control{
+    margin-left: 0;
+}

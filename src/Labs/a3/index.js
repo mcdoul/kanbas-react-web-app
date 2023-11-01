@@ -4,19 +4,29 @@ import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import Todo from "./Todo";
+import { useSelector } from "react-redux";
+
 
 
 function Assignment3() {
-    return (
-      <div className="container">
-        <h1>Assignment 3</h1>
-        <Todo/>
-        <ConditionalOutput/>
-        <Styles/>
-        <Classes/>
-        <PathParameters/>
-        <JavaScript/>
-      </div>
-    );
+  const { todos } = useSelector((state) => state.todosReducer);
+  return (
+    <div className="container">
+      <h1>Assignment 3</h1>
+      <ul className="list-group">
+      {todos.map((todo) => (
+        <li className="list-group-item" key={todo.id}>
+          {todo.title}
+        </li>
+      ))}
+      </ul>
+      <Todo/>
+      <ConditionalOutput/>
+      <Styles/>
+      <Classes/>
+      <PathParameters/>
+      <JavaScript/>
+    </div>
+  );
   }
   export default Assignment3;
