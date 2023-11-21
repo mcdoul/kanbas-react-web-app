@@ -55,7 +55,7 @@ function Dashboard(
                                     <button className="btn btn-sm btn-secondary"
                                         onClick={(event) => {
                                             event.preventDefault();
-                                            deleteCourse(course._id);
+                                            deleteCourse(course);
                                         }}>
                                         Delete
                                     </button>
