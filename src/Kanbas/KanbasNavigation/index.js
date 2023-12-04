@@ -6,6 +6,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function KanbasNavigation({ active }) {
   const links = [
+    { name: 'Signin', url: '/Signin', icon: 'fa fa-user' },
+    { name: 'Signup', url: '/Signup', icon: 'fa fa-user' },
     { name: 'Account', url: '/Account', icon: 'fa fa-user' },
     { name: 'Dashboard', url: '/Dashboard', icon: 'fas fa-tachometer' },
     { name: 'Courses', url: '/Courses', icon: 'fa fa-book' },
